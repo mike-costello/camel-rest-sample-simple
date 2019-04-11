@@ -49,7 +49,11 @@ local.properties
 # Annotation Processing
 .apt_generated/
 
+#eclipse-java#
+.classpath
+.project
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
 .worksheet
+/target/
