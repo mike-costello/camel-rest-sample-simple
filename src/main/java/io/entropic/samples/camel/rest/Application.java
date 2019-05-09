@@ -59,11 +59,11 @@ public class Application extends SpringBootServletInitializer {
             rest("/books").description("Books REST service")
                 .get("/").description("The list of all the books")
                     .route().routeId("books-api")
-                    .transform(simple("Sup Son This is a Book"))
+                    .transform(simple("Nancy Drew: Finding Shadowman"))
                     .endRest()
-                .get("order/{id}").description("Details of an order by id")
-                    .route().routeId("order-api")
-                    .transform(simple("sup son this is an order"));
+                .get("books/{id}").description("Details of a book by id")
+                    .route().routeId("books-id-api")
+                    .transform(simple("Nancy Drew and The Mystery of the Floating Fedora"));
         }
     }
 
